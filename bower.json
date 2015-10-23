@@ -1,0 +1,14 @@
+{
+  "name": "frontend-workflow-bootstrap",
+  "version": "1.0.0",
+  "description": "Frontend workflow boilerplate with Bower, Gulp and Bootstrap-sass",
+  "authors": [
+    "lukkasz"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "^1",
+    "modernizr": "~2.8.3"
+  }
+}

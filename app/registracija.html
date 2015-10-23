@@ -1,0 +1,198 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>eDemokracija</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Prefetch DNS for external assets -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container main-section">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">e-Demokracija</a>
+                </div>
+                <div id="navbar" class="navbar-right">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">Prijava</a></li>
+                    <li class="active"><a href="registracija.html">Pristupnica</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+          </div><!-- end .navbar -->
+        </nav>
+
+        <div class="container padding-top">
+
+          <div class="hero">
+            <h1>Dobrodošli u sustav e-Demokracija</h1>
+            <p class="lead">Pristupnica</p>
+          </div>
+
+          <div class="form-registracija">
+            <form>
+              <fieldset class="form-fieldset">
+                <legend>Podaci za korištenje sustava eDemokracija</legend>
+                <div class="form-group col-md-6">
+                  <label for="username">Korisničko ime*</label>
+                  <input type="text" class="form-control" id="username" placeholder="Korisničo ime">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="password">Lozinka*</label>
+                  <input type="password" class="form-control" id="password" placeholder="Lozinka">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="email">Email adresa*</label>
+                  <input type="email" class="form-control" id="email" placeholder="Email adresa">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="emailConfirm">Ponovno upiši email adresu*</label>
+                  <input type="email" class="form-control" id="emailConfirm" placeholder="Email adresa">
+                </div>
+              </fieldset>
+      
+              <fieldset class="form-fieldset">
+                <legend>Osobni podaci</legend>
+                <div class="form-group col-md-6">
+                  <label for="name">Ime*</label>
+                  <input type="text" class="form-control" id="name" placeholder="Ime">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="surrname">Prezime*</label>
+                  <input type="surname" class="form-control" id="surrname" placeholder="Prezime">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="oib">OIB*</label>
+                  <input type="text" class="form-control" id="oib" placeholder="OIB">
+                </div>
+
+              </fieldset>
+
+              <fieldset class="form-fieldset">
+                <legend>Adresa</legend>
+                <div class="form-group col-md-6">
+                  <label for="country">Država*</label>
+                  <input type="text" class="form-control" id="country" placeholder="Država">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="region">Županija*</label>
+                  <input type="text" class="form-control" id="region" placeholder="Županija">
+                </div>
+
+                <hr class="col-md-12">
+
+                <div class="form-group col-md-6">
+                  <label for="city">Grad*</label>
+                  <input type="text" class="form-control" id="city" placeholder="Grad">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="city-number">Poštanski broj*</label>
+                  <input type="text" class="form-control" id="city-number" placeholder="Poštanski broj">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="street">Ulica*</label>
+                  <input type="name" class="form-control" id="street" placeholder="Ulica">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="street-number">Kučni broj*</label>
+                  <input type="text" class="form-control" id="street-number" placeholder="Kučni broj">
+                </div>
+              </fieldset>
+              <fieldset class="form-fieldset">
+                <legend>Preslika osobne iskaznice i glasačkog listića</legend>
+                <div class="form-group col-md-6">
+                  <label for="personal-id">Preslika osobne</label>
+                  <input type="file" id="personal-id"> 
+                </div> 
+                <div class="form-group col-md-6">
+                  <label for="ballot">Preslika glasačkog listića</label>
+                  <input type="file" id="ballot"> 
+                </div> 
+                <p class="help-block text-center">Molimo Vas da nam pošaljete presliku osobne iskaznice i glasačkog listića</p>
+              </fieldset>
+              <hr>
+              <fieldset class="form-fieldset">
+              <div class="form-group">
+                <h3 class="text-center">Uvijeti korištenja</h3>
+                <p>Ispunjavanjem ove pristupnice dajete privolu na korištenje osobnih podataka u svrhu utvrđivanja vašeg identiteta i daljnjeg sudjelovanja u raspravama i glasovanju na sustavu e-Demokracija.</p> 
+                <p>Vaši podaci neće se upotrebljavati u druge svrhe.</p>
+                <strong>"Prema članku 7. Zakona o zaštiti osobnih podataka, propisano je da se osbni podaci mogu prikupljati uz privolu ispitanika i samo u svrhu za koju je ispitanik dao privolu."</strong>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">Slažem se
+                </label>
+              </div>
+              </fieldset>
+              <hr>
+              <div class="form-group text-center">
+                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#registracija">Pristupi</button>
+              </div>
+            </form>
+          </div>
+
+        </div><!-- /.container -->
+
+        <footer>
+          <div class="container">
+          <hr>
+            <h4 class="text-center">&copy; e-Demokracija 2015.</h4>
+          </div>
+        </footer>
+        <div class="modal fade" id="registracija" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Obavijest</h4>
+              </div>
+              <div class="modal-body">
+                <p>Poštovani,</p>
+                <p>Vaš zahtjev za pristupanjem u sustav e-Demokracija uspiješno je zaprimljen.</p>
+                <p>Nakon provjere ispravnosti Vaših podataka biti će te obaviješteni putem e-maila</p>
+              </div>
+              <div class="modal-footer">
+                <a href="index.html" class="btn btn-default">Zatvori</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        
+        <!-- endbuild -->
+    </body>
+</html>

@@ -1,0 +1,206 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>eDemokracija</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Prefetch DNS for external assets -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container main-section">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">e-Demokracija</a>
+                </div>
+                <div id="navbar" class="navbar-right">
+                  <ul class="nav navbar-nav">
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="index.html">Odjava</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+          </div><!-- end .navbar -->
+        </nav>
+
+        <div class="container padding-top">
+
+          <div class="row">
+        <div class="col-md-9 pull-right">
+          <div class="tema-wrap">
+            <h2>Tema 1</h2>
+            <hr>
+          </div>          
+          
+          <div class="program">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Opis</h3>
+              </div>
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit unde recusandae odio necessitatibus doloribus voluptatibus est? Dignissimos nemo tempora similique eaque id cumque veritatis fuga atque dolores, est optio!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, ex unde incidunt maiores quidem eos harum magnam voluptatum voluptatem quas. Beatae voluptas, consequuntur debitis veniam. Commodi, ex, rem. Maiores, repudiandae?</p>
+              </div> <!-- /.panel-body -->
+            </div> <!-- panel -->
+          </div> <!-- /.program -->   
+
+          <div class="slike-video">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Dokumenti, slike i video</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-3">
+                    <a class="thumbnail" data-toggle="modal" data-target="#myModal">
+                      <img src="images/slika5.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a class="thumbnail" data-toggle="modal" data-target="#myModal">
+                      <img src="images/slika6.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="col-md-3">
+                    <a class="thumbnail" data-toggle="modal" data-target="#myModal">
+                      <img src="images/slika7.jpg" alt="">
+                    </a>
+                  </div>
+                </div> <!-- /.row -->
+              </div> <!-- /.panel-body -->
+            </div> <!-- panel -->
+          </div> <!-- /.slike-video -->   
+            <div class="program">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Komentari</h3>
+              </div>
+              <div class="panel-body">
+                <table class="table">
+                  <tr>
+                    <td class="korisnik">Korisnik 1 <span class="date">5.1.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                  </tr>
+                  <tr>
+                    <td class="korisnik">Korisnik 2 <span class="date">9.1.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                  </tr>
+                 
+                </table>
+                <hr>
+                <form class="form-inline" id="form-komentar">
+                  <div class="form-group form-input-wrap">
+                    <input type="text" class="form-control form-input" placeholder="Komentar" id="form-input">
+                  </div>
+                  <div class="form-group form-button-wrap">
+                    <button type="submit" class="btn btn-warning form-button" id="form-button">Komentiraj</button>
+                  </div>
+                  
+                </form>
+              </div> <!-- /.panel-body -->
+            </div> <!-- panel -->
+          </div> <!-- /.program -->  
+          <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <p class="glasaj-wrap">
+                    <a href="teme.html" class="btn btn-success btn-block">Glasaj</a>
+                </p>
+              </div>
+            </div>
+        </div> <!-- /.col-md-9 -->
+        <div class="col-md-3">
+          <div class="list-group">
+            <a href="kandidati.html" class="list-group-item active">
+              Kandidati
+            </a>
+            <a href="kandidat.html" class="list-group-item">Ivo Ivić</a>
+            <a href="kandidat.html" class="list-group-item">Pero Perić</a>
+            <a href="kandidat.html" class="list-group-item">Hrvoje Vukelić</a>
+            <a href="kandidat.html" class="list-group-item">Ivan Obad</a>
+          </div> <!-- /.list-group -->
+          <hr>
+         <div class="list-group">
+            <a href="teme.html" class="list-group-item active">
+              Dnevni red Sabora
+            </a>
+            <a href="tema.html" class="list-group-item">Tema 1</a>
+            <a href="tema.html" class="list-group-item">Tema 2</a>
+            <a href="tema.html" class="list-group-item">Tema 3</a>
+            <a href="tema.html" class="list-group-item">Tema 4</a>
+          </div> <!-- /.list-group -->
+          <hr>  
+          <div class="list-group">
+            <p class="list-group-item active">
+              Glasanje
+            </p>
+            <a href="kandidati.html" class="list-group-item">Kandidati</a>
+            <a href="teme.html" class="list-group-item">Teme</a>
+          </div> <!-- /.list-group -->
+        </div> <!-- /.col-md-3 -->
+
+      </div>
+
+        </div><!-- /.container -->
+
+        <footer>
+          <div class="container">
+          <hr>
+            <h4 class="text-center">&copy; e-Demokracija 2015.</h4>
+          </div>
+        </footer>
+        <div class="modal fade" id="registracija" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Obavijest</h4>
+              </div>
+              <div class="modal-body">
+                <p>Poštovani,</p>
+                <p>Vaš zahtjev za pristupanjem u sustav e-Demokracija uspiješno je zaprimljen.</p>
+                <p>Nakon provjere ispravnosti Vaših podataka biti će te obaviješteni putem e-maila</p>
+              </div>
+              <div class="modal-footer">
+                <a href="index.html" class="btn btn-default">Zatvori</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

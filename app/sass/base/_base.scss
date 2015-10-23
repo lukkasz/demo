@@ -1,0 +1,62 @@
+// ================================================================================
+// Base Styles
+// ================================================================================
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding-top: 50px;
+}
+
+.hero {
+	padding: 60px 15px;
+	text-align: center;
+	background-color: #ccc;
+	margin: 20px auto;
+}
+
+.form-wrap {
+	max-width: 40%;
+	margin: 5% auto;
+	border: 1px solid #ccc;
+	padding: 4%;
+}
+
+.form-registracija {
+	max-width: 70%;
+	margin: 5% auto;
+	border: 1px solid #ccc;
+
+	& .form-fieldset {
+		padding: 10px 0;
+		margin-bottom: 20px;
+	}
+	& legend {
+		background-color: #ccc;
+		padding: 5px 30px;
+	}
+
+	& .form-group {
+		padding: 0 30px;
+	}
+
+	& .checkbox {
+		text-align: center;
+	}
+
+
+}
+
+.registracija {
+	margin-top: 40px;
+	text-align: right;
+
+	& > span {
+		display: inline-block;
+		padding-top: 5px;
+		padding-right: 10px;
+		font-weight: bold;
+	}
+}

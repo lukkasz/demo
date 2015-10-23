@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>eDemokracija</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Prefetch DNS for external assets -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container main-section">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">e-Demokracija</a>
+                </div>
+                <div id="navbar" class="navbar-right">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Prijava</a></li>
+                    <li><a href="registracija.html">Pristupnica</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+          </div><!-- end .navbar -->
+        </nav>
+
+        <div class="container padding-top">
+
+          <div class="hero">
+            <h1>Dobrodošli u sustav e-Demokracija</h1>
+            <p class="lead">Prijava</p>
+          </div>
+
+          <div class="form-wrap">
+            <form>
+              <div class="form-group">
+                <label for="username">Korisničko ime</label>
+                <input type="username" class="form-control" id="username" placeholder="Korisničo ime">
+              </div>
+              <div class="form-group">
+                <label for="password">Lozinka</label>
+                <input type="password" class="form-control" id="password" placeholder="Lozinka">
+              </div>
+              <a href="home.html" class="btn btn-success btn-block">Prijava</a>
+            </form>
+            <hr>
+            <div class="registracija clearfix">
+                  <span>Želite pristupiti?</span><a href="registracija.html" class="btn btn-info pull-right">Ispuni pristupnicu</a>
+              </div>            
+          </div>
+
+        </div><!-- /.container -->
+
+        <footer>
+          <div class="container">
+          <hr>
+            <h4 class="text-center">&copy; e-Demokracija 2015.</h4>
+          </div>
+        </footer>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

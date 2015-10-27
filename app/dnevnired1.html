@@ -1,0 +1,167 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>eDemokracija</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Prefetch DNS for external assets -->
+        <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <!-- build:css styles/vendor.css -->
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <!-- endbuild -->
+
+        <!-- build:css styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="/bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container main-section">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="index.html">e-Demokracija</a>
+                </div>
+                <div id="navbar" class="navbar-right">
+                  <ul class="nav navbar-nav">
+                    <li><a href="home.html">Početna</a></li>
+                    <li class="active"><a href="dnevnired.html">Dnevni red Sabora</a></li>
+                    <li><a href="#">Profil</a></li>
+                    <li><a href="index.html">Odjava</a></li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+          </div><!-- end .navbar -->
+        </nav>
+
+        <div class="container padding-top">
+
+          <div class="row">
+
+            <h1 class="text-center">Eksploatacija ugljikovodika iz Jadrana <a href="#" class="btn btn-info" data-toggle="modal" data-target="#glasaci">prikaži glasače</a></h1>
+
+            <hr>  
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="text-center">Jeste li za eksploataciju ugljikovodika iz Jadrana?</h3></a>
+              </div>
+                
+              <div class="panel-body">
+              <h4>Rasprava</h4>
+              <table class="table">
+                  <tr>
+                    <td class="korisnik">Korisnik 1 <span class="date">5.1.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                  </tr>
+                  <tr>
+                    <td class="korisnik">Korisnik 2 <span class="date">9.1.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                  </tr>
+                 
+                </table>
+                <hr>
+                <form class="" id="form-komentar">
+                  <div class="form-group">
+                    <textarea class="form-control" row="5" cell="5" placeholder="Komentar" id="form-input"></textarea>
+                  </div>
+                  <div class="form-group clearfix">
+                    <button type="submit" class="btn btn-warning pull-right" id="form-button">Komentiraj</button>
+                  </div>
+                  
+                </form>
+              </div>
+              <div class="panel-footer">
+                <div class="text-center">
+                  <button class="btn btn-success" type="button">
+                    Za <span class="badge">3</span>
+                  </button>
+                  <button class="btn btn-default" type="button">
+                    Suzdržana <span class="badge">1</span>
+                  </button>
+                  <button class="btn btn-danger" type="button">
+                    Protiv <span class="badge">2</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+        </div><!-- /.container -->
+
+        <footer>
+          <div class="container">
+          <hr>
+            <h4 class="text-center">&copy; e-Demokracija 2015.</h4>
+          </div>
+        </footer>
+        <div class="modal fade" id="glasaci" tabindex="-1" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Glasači</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="alert alert-success col-md-4">
+                    <h4 class="text-center">Za</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item">Ivan Ivić</li>
+                      <li class="list-group-item">pero</li>
+                      <li class="list-group-item">pseudonimo</li>
+                    </ul>
+                  </div><!-- list-group-item-success -->
+
+                  <div class="alert alert-info col-md-4">
+                    <h4 class="list-group-item-heading text-center">Suzdržan</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item">pseudonimo</li>
+                    </ul>
+                  </div><!-- list-group-item-success -->
+
+                  <div class="alert alert-danger col-md-4">
+                    <h4 class="list-group-item-heading text-center">Protiv</h4>
+                    <ul class="list-group">
+                      <li class="list-group-item">Ivica</li>
+                      <li class="list-group-item">Anonimus</li>
+                    </ul>
+                  </div><!-- list-group-item-success -->
+
+                </div>
+              <div class="modal-footer">
+                <a href="#" class="btn btn-default" data-dismiss="modal">Zatvori</a>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:js scripts/plugins.js -->
+        
+        <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="js/main.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

@@ -14,7 +14,7 @@
         var year = date.getFullYear();
         var komentar = $('#form-input').val();
         var html = '<tr>' + 
-                      '<td class="korisnik">Korisnik <span class="date">' + day +  '.' + month  + '.' +  year  + '.</span></td>' + 
+                      '<td class="korisnik">Demo korisnik <span class="date">' + day +  '.' + month  + '.' +  year  + '.</span></td>' + 
                       '<td>' + komentar+ '</td>' +
                     '</tr>'; 
 

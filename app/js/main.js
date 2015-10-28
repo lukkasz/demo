@@ -15,7 +15,13 @@
         var komentar = $('#form-input').val();
         var html = '<tr>' + 
                       '<td class="korisnik">Demo korisnik <span class="date">' + day +  '.' + month  + '.' +  year  + '.</span></td>' + 
-                      '<td>' + komentar+ '</td>' +
+                      '<td>' + komentar + 
+                      	'<div class="likes clearfix">' + 
+                      		'<div class="pull-right">' + 
+                        		'<a href="#" class="vote">Slažem se<span class="badge">0</span></a>' +
+                        		'<a href="#" class="vote">Ne slažem se<span class="badge">0</span></a>' +
+                      		'</div>' +
+                    '</div></td>' +
                     '</tr>'; 
 
         $('table.table').append(html);

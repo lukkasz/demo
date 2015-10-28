@@ -34,8 +34,14 @@
             <div class="container main-section">
                 <div class="navbar-header">
                   <a class="navbar-brand" href="index.html">e-Demokracija</a>
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
                 </div>
-                <div id="navbar" class="navbar-right">
+                <div id="navbar-collapse-1" class="collapse navbar-collapse navbar-right">
                   <ul class="nav navbar-nav">
                     <li><a href="home.html">Početna</a></li>
                     <li class="active"><a href="dnevnired.html">Dnevni red Sabora</a></li>
@@ -43,7 +49,7 @@
                     <li><a href="index.html">Odjava</a></li>
                   </ul>
                 </div><!--/.nav-collapse -->
-          </div><!-- end .navbar -->
+            </div><!-- end .navbar -->
         </nav>
 
         <div class="container padding-top">
@@ -62,12 +68,59 @@
               <h4>Rasprava</h4>
               <table class="table">
                   <tr>
-                    <td class="korisnik">Korisnik 1 <span class="date">5.1.2015.</span></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                    <td class="korisnik">Anonimus<span class="date">15.10.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.
+                    <div class="likes clearfix">
+                      <div class="pull-right">
+                        <a href="#" class="vote">Slažem se<span class="badge">3</span></a>
+                        <a href="#" class="vote">Ne slažem se<span class="badge">4</span></a>
+                      </div>
+                    </div>
+                    </td>
                   </tr>
                   <tr>
-                    <td class="korisnik">Korisnik 2 <span class="date">9.1.2015.</span></td>
-                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.</td>
+                    <td class="korisnik">Ivica<span class="date">16.10.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.
+                    <div class="likes clearfix">
+                      <div class="pull-right">
+                        <a href="#" class="vote">Slažem se<span class="badge">10</span></a>
+                        <a href="#" class="vote">Ne slažem se<span class="badge">3</span></a>
+                      </div>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="korisnik">Ivan Ivić <span class="date">16.10.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.
+                    <div class="likes clearfix">
+                      <div class="pull-right">
+                        <a href="#" class="vote">Slažem se<span class="badge">10</span></a>
+                        <a href="#" class="vote">Ne slažem se<span class="badge">2</span></a>
+                      </div>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="korisnik">pero<span class="date">17.10.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.
+                    <div class="likes clearfix">
+                      <div class="pull-right">
+                        <a href="#" class="vote">Slažem se<span class="badge">2</span></a>
+                        <a href="#" class="vote">Ne slažem se<span class="badge">8</span></a>
+                      </div>
+                    </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="korisnik">pseudonimo <span class="date">25.10.2015.</span></td>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur et quaerat natus, amet porro quia recusandae ipsam eligendi eius, repellendus, non ullam! Distinctio officia, rerum. Corrupti voluptate debitis eum nihil.
+                    <div class="likes clearfix">
+                      <div class="pull-right">
+                        <a href="#" class="vote">Slažem se<span class="badge">1</span></a>
+                        <a href="#" class="vote">Ne slažem se<span class="badge">1</span></a>
+                      </div>
+                    </div>
+                    </td>
                   </tr>
                  
                 </table>
@@ -84,13 +137,13 @@
               </div>
               <div class="panel-footer">
                 <div class="text-center">
-                  <button class="btn btn-success" type="button">
+                  <button class="btn btn-success vote" type="button">
                     Za <span class="badge">3</span>
                   </button>
-                  <button class="btn btn-default" type="button">
+                  <button class="btn btn-default vote" type="button">
                     Suzdržana <span class="badge">1</span>
                   </button>
-                  <button class="btn btn-danger" type="button">
+                  <button class="btn btn-danger vote" type="button">
                     Protiv <span class="badge">2</span>
                   </button>
                 </div>
@@ -163,5 +216,16 @@
         <!-- build:js scripts/main.js -->
         <script src="js/main.js"></script>
         <!-- endbuild -->
+        <script>
+          $('.vote').on('click', function(e){
+            e.preventDefault();
+            var newVal = parseInt($(this).children().text());
+            newVal += 1;
+            $(this).children().text(newVal);
+            $(this).unbind('click');
+            $(this).siblings().unbind('click');
+          });
+
+        </script>
     </body>
 </html>

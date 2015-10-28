@@ -60,3 +60,21 @@ body {
 		font-weight: bold;
 	}
 }
+
+.date {
+	display: block;
+}
+
+.likes {
+	a {
+		margin-right: 25px;
+	}
+	i {
+		color: #000;
+	}
+
+	span {
+		background-color: gray;
+		margin-left: 2px;
+	}
+}
